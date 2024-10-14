@@ -10,11 +10,16 @@ import { ITask } from 'src/app/helper/type';
 export class TaskItemComponent {
   @Input() task!: ITask;
   @Output() onDeleteTask: EventEmitter<ITask> = new EventEmitter();
+  @Output() onToggleReminder: EventEmitter<ITask> = new EventEmitter();
   faTimes = faTimes;
 
   constructor() {}
 
   onDelete(task: ITask) {
     this.onDeleteTask.emit(task);
+  }
+
+  onToggle(task: ITask) {
+    this.onToggleReminder.emit(task);
   }
 }
