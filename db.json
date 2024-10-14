@@ -17,12 +17,6 @@
       "text": "Vegan Appointment",
       "day": "May 7th at 6:30pm",
       "reminder": true
-    },
-    {
-      "id": "8526",
-      "text": "Adding task",
-      "day": "15th June",
-      "reminder": true
     }
   ]
 }
